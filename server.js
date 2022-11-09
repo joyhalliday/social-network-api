@@ -8,6 +8,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(require("./routes"));
 
 app.get('/user', (req, res) => {
     User.find({}, (err, result) => {
@@ -68,7 +69,7 @@ app.post('/thoughts/:thoughtId/reactions', (req, res) => {
 })
 
 app.delete('/thoughts/:thoughtId/reactions', (req, res) => {
-    
+
 })
 
 db.once('open', () => {
