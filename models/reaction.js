@@ -1,5 +1,5 @@
 const { Schema, Types } = require('mongoose');
-const date = require('..utils/helper.js');
+const date = require('../utils/helper');
 const reactionSchema = new Schema({
     reactionId: { type: Schema.Types.ObjectId, default: () => new Types.ObjectId()},
     reactionBody: { type: String, required: true, maxlength: 280 },

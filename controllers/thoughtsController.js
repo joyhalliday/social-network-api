@@ -20,7 +20,7 @@ createThought(req, res) {
     Thought.create(req.body)
     .then((thought) => {
         return User.findOneAndUpdate(
-        { _id: req.body.userId },
+        { username: req.body.username },
         { $addToSet: { thoughts: thought._id } },
         { new: true }
         );
