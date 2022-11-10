@@ -9,8 +9,8 @@ This is a backend API framework for a social media application. It allows for ma
 - [Video Walkthrough](#video-walkthrough-)
 - [Features](#features-)
 - [Installation](#installation-)
--[Technologies](#technologies-)
--[Credits](#credits)
+- [Technologies](#technologies-)
+- [Credits](#credits)
 
 ## Video Walkthrough
 
